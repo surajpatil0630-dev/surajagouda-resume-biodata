@@ -3,3 +3,24 @@
 @media(max-width:850px){.site-header{padding:0 22px}.wrap{margin-left:24px;margin-right:24px}.hero{padding-top:50px;grid-template-columns:1fr .8fr}.profile-art{transform:scale(.82)}.quick-facts{grid-template-columns:1fr 1.5fr;row-gap:16px}.quick-facts>div:nth-child(2){border:0}.about-grid{grid-template-columns:1fr 1fr}.feature-card{grid-column:span 2}.biodata-layout{grid-template-columns:220px 1fr;gap:28px}.bio-sidebar{padding:22px}}
 @media(max-width:600px){.site-header{height:68px;padding:0 18px}.brand{font-size:12px}.brand-mark{width:26px;height:26px}nav{gap:15px;margin:0}nav a{font-size:11px}nav a.active:after{bottom:-24px}.header-cta{display:none}.wrap{margin-left:18px;margin-right:18px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:43px 0 28px}.hero h1{font-size:47px}.intro{font-size:13px}.hero-meta{font-size:9px;gap:12px}.profile-art{height:290px;transform:scale(.8);transform-origin:center top;margin:12px auto -35px;width:100%}.quick-facts{padding:17px;margin-bottom:67px;grid-template-columns:1fr 1.4fr}.quick-facts>div{padding:0 10px}.quick-facts strong{font-size:10px}.section{margin-bottom:64px}.section-heading{display:block}.section-heading h2{font-size:27px}.section-heading>p{margin-top:13px}.about-grid{grid-template-columns:1fr}.feature-card{grid-column:auto}.about-card{min-height:175px}.skills-panel{grid-template-columns:1fr;padding:20px;gap:20px}.contact-band{display:block;padding:28px 23px}.light-button{margin-top:20px}.site-footer{flex-wrap:wrap;gap:15px}.site-footer>span{order:3;width:100%}.footer-links{gap:14px}.page-hero{padding:48px 0 27px}.page-hero h1{font-size:46px}.biodata-layout{display:block;padding:26px 0 65px}.bio-sidebar{min-height:0;margin-bottom:34px}.bio-monogram{width:58px;height:58px;margin-bottom:17px}.bio-sidebar-rule{margin:16px 0 11px}.sidebar-note br{display:none}.detail-grid{grid-template-columns:1fr;margin-left:0}.bio-paragraph{margin-left:0}.timeline{margin-left:5px}.bio-section-title{margin-bottom:13px}.bio-section{margin-bottom:22px;padding-bottom:22px}}
 @media print{body{background:white}.site-header,.site-footer,.hero-actions,.contact-band,.breadcrumb{display:none!important}.wrap{max-width:none;margin:0 20px}.hero{min-height:0;padding:25px 0}.profile-art{transform:scale(.7)}.section{margin-bottom:32px}.about-card,.quick-facts,.skills-panel,.education-row{break-inside:avoid}.biodata-layout{padding:20px 0}.bio-sidebar{print-color-adjust:exact}}
+
+
+/* Refined evergreen, mint, and warm ivory palette */
+:root{--paper:#f7f9f6;--green:#d5f17d;--green-deep:#578a6c;--navy:#18363a;--line:#e2e9e3;--shadow:0 24px 70px #163a3210}
+.accent{color:#578a6c}
+.status-dot{background:#62a785;box-shadow:0 0 0 4px #62a78522}
+.section[id]{scroll-margin-top:28px}
+.interest-grid,.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.interest-card,.project-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:23px;box-shadow:var(--shadow)}
+.interest-card{min-height:180px}
+.interest-icon{width:36px;height:36px;border-radius:11px;background:#eef5e9;color:var(--green-deep);display:grid;place-items:center;font-size:19px;font-weight:700}
+.interest-card h3,.project-card h3{font:700 16px/1.35 Manrope,sans-serif;letter-spacing:-.035em;margin:17px 0 7px}
+.interest-card p,.project-card p{font-size:11px;line-height:1.75;color:var(--muted);margin:0}
+.project-card{min-height:260px;display:flex;flex-direction:column}
+.project-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.project-index{width:31px;height:31px;border-radius:10px;background:#eaf3df;color:#568569;display:grid;place-items:center;font-size:10px;font-weight:700}
+.project-type{font-size:9px;letter-spacing:.04em;color:#73827a;text-align:right}
+.project-card .tags{margin-top:auto;padding-top:18px}
+.project-card .tags span{font-size:9px;padding:5px 9px}
+@media(max-width:850px){.interest-grid,.project-grid{grid-template-columns:1fr 1fr}.project-card:last-child{grid-column:span 2}}
+@media(max-width:600px){.site-header{gap:10px}.site-header nav{gap:10px;margin:0}.site-header nav a{font-size:10px}.interest-grid,.project-grid{grid-template-columns:1fr}.project-card:last-child{grid-column:auto}.interest-card{min-height:0}.project-card{min-height:230px}}
